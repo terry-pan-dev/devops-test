@@ -26,4 +26,4 @@ jobs:
           context: ./server
           no-cache: true
           push: true
-          tags: devops-test:latest
+          tags: ${{  secrets.DOCKERHUB_USERNAME }}/devops-test:latest
